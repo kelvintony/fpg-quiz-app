@@ -1,0 +1,274 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Verdana", cursive, sans-serif;
+	color: #ffffff;
+}
+
+/* login stle */
+.login-navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.login-navbar img {
+	width: 250px;
+}
+.login-navbar-a {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.login-navbar-a p {
+	color: black;
+}
+.login-navbar-btn {
+	padding: 7px 20px 7px 20px;
+	font-size: 14px;
+	border: none;
+	background-color: aquamarine;
+	border-radius: 5px;
+	cursor: pointer;
+	color: black;
+}
+.link-btn {
+	text-decoration: none;
+}
+.login-navbar-btn:hover {
+	background-color: rgb(96, 253, 201);
+}
+.login-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.login-container-heading {
+	font-size: 25px;
+	color: rgb(56, 56, 56);
+	margin-bottom: 30px;
+}
+
+.login-container-a {
+	padding: 30px 15px 30px 15px;
+	font-size: 20px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+label {
+	color: black;
+}
+input {
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(163, 163, 163);
+	margin-top: 5px;
+	width: 350px;
+	color: black;
+}
+
+.login-container-btn {
+	margin-top: 20px;
+	padding: 10px 20px 10px 20px;
+	font-size: 17px;
+	width: 200px;
+	border: none;
+	background-color: aquamarine;
+	border-radius: 5px;
+	cursor: pointer;
+	color: black;
+}
+
+.login-container-btn:hover {
+	background-color: rgb(96, 253, 201);
+}
+
+/* quiz style */
+
+.quiz-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.quiz-container-a {
+	background-color: #252d4a;
+	width: 450px;
+	height: 100vh;
+	height: min-content;
+	border-radius: 15px;
+	padding: 20px;
+	box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.score-section {
+	display: flex;
+	font-size: 24px;
+	flex-direction: column;
+	align-items: center;
+}
+.score-section-btn {
+	margin-top: 20px;
+	padding: 10px 20px 10px 20px;
+	font-size: 18px;
+	border: none;
+	background-color: none;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	color: whitesmoke;
+	border: 1px solid rgb(152, 152, 152);
+}
+
+.score-section-btn:hover {
+	background-color: whitesmoke;
+	color: black;
+}
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+	width: 100%;
+	position: relative;
+}
+
+.question-count {
+	margin-bottom: 20px;
+}
+
+.question-count span {
+	font-size: 28px;
+}
+
+.question-text {
+	margin-bottom: 12px;
+}
+
+.timer-text {
+	background: rgb(230, 153, 12);
+	padding: 15px;
+	margin-top: 20px;
+	margin-right: 20px;
+	border: 5px solid rgb(255, 189, 67);
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+button {
+	width: 100%;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #252d4a;
+	border-radius: 15px;
+	display: flex;
+	padding: 5px;
+	justify-content: flex-start;
+	align-items: center;
+	border: 5px solid #234668;
+	cursor: pointer;
+}
+
+.correct {
+	background-color: #2f922f;
+}
+
+.incorrect {
+	background-color: #ff3333;
+}
+
+button:hover {
+	background-color: #555e7d;
+}
+
+button:focus {
+	outline: none;
+}
+
+button svg {
+	margin-right: 5px;
+}
+
+/* erropage style */
+.page404-container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	color: rgb(91, 91, 91);
+}
+
+@media screen and (max-width: 800px) {
+	/* login stle */
+
+	.login-navbar img {
+		width: 120px;
+	}
+
+	.login-navbar-a p {
+		color: black;
+		font-size: 13px;
+	}
+	.login-navbar-btn {
+		font-size: 13px;
+	}
+
+	/* login style2 */
+
+	.login-container-heading {
+		font-size: 20px;
+	}
+
+	.login-container-a {
+		font-size: 15px;
+	}
+	label {
+		color: black;
+	}
+	input {
+		font-size: 15px;
+		width: 300px;
+	}
+
+	.login-container-btn {
+		margin-top: 20px;
+		font-size: 13px;
+		width: 150px;
+	}
+
+	.login-container-btn:hover {
+		background-color: rgb(96, 253, 201);
+	}
+
+	/* quiz style */
+	.quiz-container-a {
+		width: 300px;
+	}
+
+	/* ANSWERS/RIGHT SECTION */
+	button {
+		font-size: 14px;
+	}
+}
