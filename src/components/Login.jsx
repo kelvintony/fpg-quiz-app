@@ -23,6 +23,10 @@ const Login = () => {
 	return (
 		<section class='login-container'>
 			<h1 class='login-container-heading'>Fill in the form to start quiz</h1>
+			<a href='' style={{ color: 'gray' }}>
+				<i class='fa-solid fa-3x fa-brackets-curly' />
+			</a>
+			<br />
 			<div class='login-container-a'>
 				<label for=''>
 					Name: <br />

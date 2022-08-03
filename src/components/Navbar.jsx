@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fpgLogo from '../assets/logo-fo.png';
-import { Link, useNavigate, Location, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
 	const navigate = useNavigate();
@@ -19,6 +19,7 @@ const Navbar = () => {
 		localStorage.clear();
 		setUser(null);
 		navigate('/');
+		// window.location = '/';
 	};
 	return (
 		<nav class='login-navbar'>
